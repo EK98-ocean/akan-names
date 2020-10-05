@@ -1,0 +1,14 @@
+body{
+    background-color: #facf5a;
+    color: #ff5959;
+    font-family: 'Lucida Sans';
+}
+.column{
+    float: right;
+    width: 40%;
+    background-color: #49beb7;    
+    color: #085f63;
+}
+table.column{
+    color: #085f63;
+}
