@@ -20,8 +20,8 @@
 
         var myDate = new Date(myStringDate);
         var dayOfWeek = myDate.getDay();
-        var userDate = days[dayOfWeek]
-        var maleAkanName = maleAkanNames[dayOfWeek]
+        var userDate = days[dayOfWeek];
+        var maleAkanName = maleAkanNames[dayOfWeek];
         var femaleAkanName = femaleAkanNames[dayOfWeek];
 
         document.getElementById("message").innerHTML = "I was born on a " + userDate + "!";
