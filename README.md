@@ -15,13 +15,13 @@ No setup needed, just sit back and enjoy!
 No known bugs
 
 ## Technologies Used
-HTML, JavaScript and CSS, using arrrays in JavaScript to store and lookup information and functions to process inputs. Making use of divs and classes in CSS to create a well-organised webpage.
+HTML, JavaScript and CSS, using arrrays in JavaScript to store and lookup information and functions to process inputs. Making use of divs and classes in CSS to create a well-organised webpage. Added HTML table.
 
 ## Support and contact details
 EK98-Ocean, contact via email: gakungr@gmail.com
 
 ## Link to live site
-https://ek98-ocean.github.io/portfolio
+https://ek98-ocean.github.io/akan-names/
 
 ### License
 *GNU General Public License*
