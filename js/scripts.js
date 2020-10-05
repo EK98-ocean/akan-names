@@ -1,14 +1,36 @@
 
-var dayOfTheWeek = function (cc, yy,dd, mm) {
-    return (((cc/4) -2*cc-1) + ((5*yy/4) ) + ((26*(mm+1)/10)) + dd) % 7;
+       
+    function myFunction(){
+
+        var gender = document.querySelector('input[name="Gender"]:checked').value;
+
+        var myStringDate = document.getElementById("dateProvided").value;
+
+        var days = new Array(7);
+        days[0] = "Sunday";
+        days[1] = "Monday";
+        days[2] = "Tuesday";
+        days[3] = "Wednesday";
+        days[4] = "Thursday";
+        days[5] = "Friday";
+        days[6] = "Saturday";
+
+        var maleAkanNames =  ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"];
+        var femaleAkanNames =  ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"];
+
+        var myDate = new Date(myStringDate);
+        var dayOfWeek = myDate.getDay();
+        var userDate = days[dayOfWeek]
+        var maleAkanName = maleAkanNames[dayOfWeek]
+        var femaleAkanName = femaleAkanNames[dayOfWeek];
+
+        document.getElementById("message").innerHTML = "I was born on a " + userDate + "!";
+        
+     
+        if (gender === "male") {
+            document.getElementById("Akan Name").innerHTML = "My Akan name is " + maleAkanName + "!";
+        }
+        else {
+            document.getElementById("Akan Name").innerHTML = "My Akan name is " + femaleAkanName + "!";
+        }
     }
-    
-    //cc = century digits 
-    //yy = year digits
-    // mm = month digits
-    // dd = day digits
-    
-    var cc = parseInt(prompt("Enter the first two digits of the year of your birth (e.g. if you were born in 1990, enter '19'):"));
-    var yy = parseInt(prompt("Enter the last two digits of the year of your birth (e.g. if you were born in 1990, enter '90'):"));
-    var mm = parseInt(prompt("Enter the month of your birth in number form (e.g. Jan =1, Feb =2 e.t.c):"));
-    var dd = parseInt(prompt("Enter the day of your birth (e.g. if date of birth is 1st September, enter 1:"));

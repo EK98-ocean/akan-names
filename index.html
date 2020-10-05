@@ -1,12 +1,23 @@
 <html>
     <head>
         <title>
-            Akan Name Generator
+        Akan Name Generator
         </title>
     </head>
     <body>
         <h1>Akan Name Generator</h1>
-        <script src= js/scripts.js></script>
+        <script type = "text/JavaScript" src= js/scripts.js></script>
         <p>Find out your Akan name with this handy generator app, simply add your date of birth.</p>
+        <form>
+            <input type= "text" id= "dateProvided" placeholder= "mm/dd/yyyy" />
+            <input type= "radio" id= "female" name= "Gender" value= "female">
+            <label for= "female" >Female</label>
+            <input type= "radio" id= "male" name= "Gender" value= "male">
+            <label for= "male" >Male</label>
+            <button type= "submit" onclick = "myFunction(); return false;">Submit!</button>
+            <p id = "message"></p>
+            <p id = "Akan Name"></p>
+            
+        </form>
     </body>
 </html>
